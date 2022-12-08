@@ -13,7 +13,7 @@ Ashraf Ahmed Thabet
 <li>Hassan Mustafa Mohammed
 <ul>
 <li>Hangman game
-Design login and register form</li>
+Design login & register form</li>
 </ul>
 </li>
 <li>Kareem Ayman Sakr
