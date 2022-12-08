@@ -1,0 +1,109 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+ul {
+  display: flex;
+  justify-content: end;
+  list-style: none;
+  width: 15%;
+}
+li {
+  padding: 10px;
+}
+a:hover{
+    color: #3b4627;
+    font-size: large;
+}
+nav{
+  background-color: #213b57;
+  color: white;
+  display: flex;
+  padding: 11px 30px;
+  align-items: center;
+}
+nav h1 {
+  display: inline-block;
+}
+.container{
+  display: flex;
+  height: 82vh;
+}
+.game1,.game2,.game3,.game4,.game5{
+  width: 20%;
+  height: 100%;
+  background-position: center ;
+  background-size: cover;
+  position: relative;
+}
+.game1 {
+  background-image: url(../images/typing_game.jpg);
+}
+.game2 {
+  background-image: url(../images/hangman.jpg);
+}
+.game3 {
+  background-image: url(../images/tic_tac_toe.jpg);
+}
+.game4 {
+  background-image: url(../images/memoryGame.jpg);
+}
+.game5 {
+  background-image: url(../images/reaction_game.jpg);
+}
+.title {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.396);
+  padding: 15px;
+  text-align: center;
+}
+.ftr{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    padding: 30px;
+}
+.ftr button{
+    padding: 10px 60px;
+    border-radius: 50px;
+    background-color: #85b22c;
+    color: white;
+    border: none;
+    font-size: large;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+.ftr button:hover{
+    font-size: larger;
+    background-color: #9acd32;
+}
+
+a{
+  padding: 10px 60px;
+  border-radius: 50px;  
+  background-color: #85b22c;
+  font-size: large;
+  color: white;
+}
+
+.logout{
+  margin-left: auto;
+  text-decoration: underline;
+  cursor: pointer;
+}
+footer {
+  background-color: #213b57;
+  color: white;
+  padding: 17px 0;
+  text-align: center;
+}

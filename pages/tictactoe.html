@@ -1,0 +1,51 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="icon" href="../images/xoicon.jpg">
+    <link rel="stylesheet" href="../css/tic_tac_toe.css" />
+  </head>
+  <body>
+    <div class="container" id="container">
+      <h1>Tic Tac Toe</h1>
+      <!-- result-->
+      <div id="result-container">
+        <div id="result-x">
+          <span>X Win</span>
+          <span id="scoreX">---</span>
+          <span>Score</span>
+        </div>
+        <div id="result-o">
+          <span>O Win</span>
+          <span id="scoreY">---</span>
+          <span>Score</span>
+        </div>
+      </div>
+      <p id="turn">Turn X</p>
+      <!-- game Board-->
+      <div id="game">
+        <div class="box" id="btn1" onclick="handleGame(this)"></div>
+        <div class="box" id="btn2" onclick="handleGame(this)"></div>
+        <div class="box" id="btn3" onclick="handleGame(this)"></div>
+        <div class="box" id="btn4" onclick="handleGame(this)"></div>
+        <div class="box" id="btn5" onclick="handleGame(this)"></div>
+        <div class="box" id="btn5" onclick="handleGame(this)"></div>
+        <div class="box" id="btn6" onclick="handleGame(this)"></div>
+        <div class="box" id="btn7" onclick="handleGame(this)"></div>
+        <div class="box" id="btn8" onclick="handleGame(this)"></div>
+      </div>
+      <div id="modify">
+        <div id="restart">
+          <button id="btn-restart" onclick="restartGame()">Restart</button>
+        </div>
+        <div id="reset">
+          <button id="btn-reset">Reset</button>
+        </div>
+      </div>
+    </div>
+    <script src="../js/tic_tac_toe.js"></script>
+  </body>
+</html>

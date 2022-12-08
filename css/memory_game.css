@@ -1,0 +1,134 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #0e2e5f;
+}
+
+.wrapper {
+    box-sizing: content-box;
+    margin: auto;
+    margin-top: 50px;
+    width: 40%;
+    padding: 2%;
+    background-color: #ffffff;
+    border-radius: 0.6em;
+    box-shadow: 0 0.9em 2.8em rgba(86, 66, 0, 0.2);
+}
+
+@media only screen and (max-width: 660px) {
+    .wrapper {
+        width: 90%;
+    }
+}
+
+.game-container {
+    position: relative;
+    width: 100%;
+    display: grid;
+    gap: 0.6em;
+}
+
+.stats-container {
+    text-align: right;
+    margin-bottom: 1.2em;
+}
+
+.stats-container span {
+    font-weight: 600;
+}
+
+.card-container {
+    position: relative;
+    width: 100%;
+    height: 6.25em;
+    cursor: pointer;
+}
+
+.card-before,
+.card-after {
+    position: absolute;
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #000000;
+    color: white;
+}
+
+.card-before {
+    background-color: #0066ff;
+    font-size: 2.8em;
+    font-weight: 600;
+}
+
+.card-after {
+    background-color: #ffffff;
+}
+
+.controls-container {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-color: #0e2e5f;
+    top: 0;
+    color: white;
+}
+
+h1 {
+    position: absolute;
+    top: 50px;
+}
+
+button {
+    border: none;
+    border-radius: 0.3em;
+    padding: 1em 1.5em;
+    cursor: pointer;
+}
+
+#stop {
+    font-size: 1.1em;
+    display: block;
+    margin: 1.1em auto 0 auto;
+    background-color: #c91010;
+    color: #ffffff;
+}
+
+.controls-container button {
+    font-size: 1.3em;
+    box-shadow: 0 0.6em 2em rgba(86, 66, 0, 0.2);
+    color: white;
+    background-color: yellowgreen;
+}
+
+.hide {
+    display: none;
+}
+
+#result {
+    text-align: center;
+}
+
+#result h2 {
+    font-size: 2.5em;
+}
+
+#result h4 {
+    font-size: 1.8em;
+    margin: 0.6em 0 1em 0;
+}
+
+#time {
+    margin-left: 50px;
+}

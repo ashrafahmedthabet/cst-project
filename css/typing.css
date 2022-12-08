@@ -1,0 +1,62 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+background-color: #213b57;
+}
+.container{
+    text-align: center;
+    color: white;
+    padding: 100px;
+}
+h1{
+    padding: 20px;
+}
+.container button{
+    padding: 10px 60px;
+    border-radius: 50px;
+    background-color: #85b22c;
+    color: white;
+    border: none;
+    font-size: large;
+}
+.container button:hover{
+    font-size: larger;
+    background-color: #9acd32;
+
+  
+}
+.playingArea{
+    margin-top: 10px;
+    background-color: rgba(0, 0, 0, 0.27);
+    padding: 20px;
+}
+.playingArea h3{
+    padding: 30px;
+    color: #9acd32;
+}
+.playingArea input{
+    padding: 10px  50px;
+    margin:20px;
+    font-size: medium;
+    font-weight: bold;
+    text-align: center;
+}
+.timer{
+    background-color: rgba(0, 0, 0, 0.35);
+    padding: 20px 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.timer span{
+    color: #9acd32;
+}
+.action{
+    color: red;
+    text-align: center;
+    font-size: larger;
+    font-weight: bold;
+    padding: 5px;
+}

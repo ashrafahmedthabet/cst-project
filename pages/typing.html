@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Game</title>
+    <link rel="icon" href="../images/typeicon.png">
+    <link rel="stylesheet" href="../css/typing.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Test your typing speed</h1>
+        <button class="btn" onclick="display()">
+            START PLAY
+        </button>
+        <div class="playingArea" style="display: none;">
+            <h3>Random Word</h3>
+            <input type="text" name="word">
+            <div class="timer">
+                <p class="one">Time left <span class="timLiftSpan"></span> seconds</p>
+                <p class="two">your score is <span class="currScore">0</span> from <span class="totalScore"></span></p>
+            </div>
+            <div class="action"></div>
+    
+    
+        </div>
+    </div>
+    <script src="../js/typing.js"></script>
+</body>
+</html>

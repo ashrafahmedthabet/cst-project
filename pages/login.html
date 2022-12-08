@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/auth.css">
+    <title>Login</title>
+
+</head>
+
+<body>
+    <div class="container">
+        <form class="form" id="login">
+            <h1 class="formTitle">Login</h1>
+            <div id="Incorrect" class="Incorrect"></div>
+            <div calss="formInputs">
+                <input id="username" type="text" class="formInput" autofocus placeholder="Username">
+            </div>
+            <div class="formInputs">
+                <input id="password" type="password" class="formInput" placeholder="Password">
+            </div>
+            <button class="formBtn">Continue</button>
+            <p class = "formText">
+                <a onclick="hvAcc()" class = "formLink" href="../index.html" id = "linkCreateAccount">Don't have an account? Create account</a>
+            </p>
+    </form>
+    </div>
+    <script src="../js/constants.js"></script>
+    <script src="../js/cookie.js"></script>
+    <script src="../js/login.js"></script>
+</body>
+
+</html>
+
