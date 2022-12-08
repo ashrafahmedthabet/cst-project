@@ -24,7 +24,7 @@ const images = [
 
 let seconds = 0, minutes = 0, movesCount = 0, winCount = 0;
 
-const matrixGenerator = function (cardValues){
+function matrixGenerator(cardValues) {
     for (let i = 0; i < 16; i++) {
         gameContainer.innerHTML += '<div class="card-container" data-card="' + cardValues[i].name + '"> <div class="card-before">?</div><div class="card-after hide"><img src="' + cardValues[i].image + '" width="70px" class="image"/></div></div >';
     }
@@ -33,18 +33,18 @@ const matrixGenerator = function (cardValues){
 
     // images handler
     cards = document.querySelectorAll(".card-container");
-    cards.forEach((card) => {
-        card.addEventListener("click", () => {
-            if (!card.classList.contains("matched")) {
-                card.firstElementChild.classList.add("hide");
-                card.lastElementChild.classList.remove("hide");
+    for (let i = 0; i < cards.length; i++) {
+        cards[i].addEventListener("click", function () {
+            if (!cards[i].classList.contains("matched")) {
+                cards[i].firstElementChild.classList.add("hide");
+                cards[i].lastElementChild.classList.remove("hide");
                 if (!firstCard) {
-                    firstCard = card;
-                    firstCardValue = card.getAttribute("data-card");
+                    firstCard = cards[i];
+                    firstCardValue = cards[i].getAttribute("data-card");
                 } else {
                     movesCounter();
-                    secondCard = card;
-                    let secondCardValue = card.getAttribute("data-card");
+                    secondCard = cards[i];
+                    let secondCardValue = cards[i].getAttribute("data-card");
                     if (firstCardValue == secondCardValue) {
                         firstCard.classList.add("matched");
                         secondCard.classList.add("matched");
@@ -55,10 +55,11 @@ const matrixGenerator = function (cardValues){
                             stopGame();
                         }
                     } else {
-                        let [tempFirst, tempSecond] = [firstCard, secondCard];
+                        let tempFirst = firstCard;
+                        let tempSecond = secondCard;
                         firstCard = false;
                         secondCard = false;
-                        setTimeout(() => {
+                        setTimeout(function () {
                             tempFirst.firstElementChild.classList.remove("hide");
                             tempFirst.lastElementChild.classList.add("hide");
 
@@ -69,11 +70,11 @@ const matrixGenerator = function (cardValues){
                 }
             }
         });
-    });
+    }
 };
 
 //Start game
-startButton.addEventListener("click", () => {
+startButton.addEventListener("click", function () {
     controls.classList.add("hide");
     stopButton.classList.remove("hide");
     startButton.classList.add("hide");
@@ -145,7 +146,7 @@ function generateRandom() {
         cardValues.push(randImages[randomIndex]);
         randImages.splice(randomIndex, 1);
     }
-    cardValues.sort(() => Math.random() - 0.5);
+    cardValues.sort(function () { return Math.random() - 0.5 });
     return cardValues;
 }
 
